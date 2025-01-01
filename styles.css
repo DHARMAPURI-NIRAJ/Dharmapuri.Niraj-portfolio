@@ -1,16 +1,15 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f59494;
 }
 
 header {
-    background-color: #333;
+    background-color: rgb(219, 82, 14);
     color: white;
-    padding: 1em 0;
+    padding: 0;
+    padding-top: 0;
 }
 
 nav {
@@ -18,12 +17,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1em;
+    margin: 20px;
+    padding: 0;
 }
 
-nav .logo h1 {
-    margin: 0;
+.header-img{
+    width: 500px; 
+    height: 200px;
 }
 
 .nav-links {
@@ -36,7 +36,7 @@ nav .logo h1 {
 }
 
 .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -47,18 +47,20 @@ main {
 }
 
 section {
-    margin-bottom: 2em;
+    margin-bottom: 10em;
     padding: 1em;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 1000px;
+    text-align: center;
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
     background-color: #333;
-    color: white;
+    color: whitesmoke;
 }
 
 @media (max-width: 768px) {
@@ -70,5 +72,27 @@ footer {
     nav .nav-links li {
         margin: 0.5em 0;
     }
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 19px;
+    display: inline-block;
+    transition: background-color 0.03s ease, color 0.3s ease;
+    border-radius:  5px;
+    background-color: #333;
+}
+.nav-links li a:hover {
+    background-color: gray;
+    color: #FFD700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+.logo h1{
+    font-size: 50px;
+}
+
+.con {
+    height: 200px;
 }
 
